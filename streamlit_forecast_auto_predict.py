@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 
 @st.cache_resource
 def connect_to_db():
-    engine = create_engine('postgresql+psycopg2://postgres:123456789@localhost:5432/salesdb')
+    engine = create_engine('postgresql+psycopg2://streamlit_user:123456789@localhost:5432/salesdb')
     return engine.connect()
 
 @st.cache_data
